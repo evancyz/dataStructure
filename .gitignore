@@ -1,0 +1,17 @@
+.settings
+.project
+.idea
+.apt_generated
+.factorypath
+*.iml
+**/.settings
+**/.classpath
+**/.eclipse
+**/.project
+**/target
+**/bin
+MANIFEST.MF
+.DS_Store
+workbench.xmi
+node_modules
+.meghanada
