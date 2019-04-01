@@ -1,3 +1,5 @@
+import domain.Node;
+
 /**
  * Created by evan on 2019/3/30.
  *
@@ -7,16 +9,6 @@
 public class SimpleLinkedList {
 
     Node head;
-
-    public static class Node {
-        int data;
-        Node next;
-
-        public Node(int data, Node next) {
-            this.data = data;
-            this.next = next;
-        }
-    }
 
     public void insertHead(int value) {
 
@@ -124,55 +116,6 @@ public class SimpleLinkedList {
         search.next = search.next.next;
     }
 
-    //头节点插入反转
-    public static Node inverseLinkList_head(Node p){
-        //先用一个临时节点
-        Node HEAD = new Node(-1, null);
-        HEAD.next = p;
-
-        //当前正在处理的
-        Node curr = p.next;
-
-        //断掉p的引用,头插法,是逆序
-        p.next = null;
-
-        Node next;
-
-        while (curr != null) {
-
-            //给下一个需要处理的标个号
-            next = curr.next;
-
-            curr.next = HEAD.next;
-            HEAD.next = curr;
-
-            curr = next;
-
-        }
-
-        return HEAD.next;
-    }
-
-    //就地反转
-    public static Node inverseLinkList(Node head){
-
-        Node a = head;  //当前节点A
-        Node b = head.next; //下个节点B
-        Node tmp;  //下下个节点C
-
-        head.next = null;
-
-        while (b != null) {
-            tmp = b.next; //记录C节点
-            b.next = a; //a->b反向
-
-            a = b; //移动到下一个节点
-            b = tmp;
-        }
-
-        return a;
-    }
-
 
 
     public void printAll() {
@@ -197,17 +140,6 @@ public class SimpleLinkedList {
         simpleLinkedList.insertTail(40);
 
         simpleLinkedList.printAll();
-        System.out.println("============");
-
-        Node node = SimpleLinkedList.inverseLinkList(simpleLinkedList.head);
-
-        Node tmp = node;
-        while (node != null) {
-            System.out.println(tmp.data);
-            tmp = tmp.next;
-
-        }
-
     }
 
 }
