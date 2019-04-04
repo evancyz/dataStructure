@@ -6,7 +6,7 @@ import domain.Node;
  * 链表反转应用
  *
  */
-public class LinkedListInverseApp {
+public class LinkedListApp {
 
     /**
      * 遍历一次得到中间节点

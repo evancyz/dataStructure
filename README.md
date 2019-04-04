@@ -10,7 +10,7 @@
 	* <code>directInverse()</code>就地反转
 	* <code>headInsertInvers\*()</code>头插法反转（*\*号表示有多种实现*）
 	* <code>arrayInverse()</code>借助数组反转
-* <code>LinkedListInverseApp</code> 单链表反转应用
+* <code>LinkedListApp</code> 单链表应用
 	* <code>getMiddle()\*</code>	获取单链表中间节点（*\*号表示有多种实现*）
 	* <code>palindrome()</code> 判断链表是否为回文链表
 ### 算法
