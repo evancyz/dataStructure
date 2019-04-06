@@ -12,7 +12,7 @@ public class SimpleStack {
     Node head;
 
     //入栈操作
-    public void push(int value) {
+    public void push(String value) {
 
         Node node = new Node(value);
 
@@ -52,10 +52,10 @@ public class SimpleStack {
     public static void main(String[] args) {
 
         SimpleStack stack = new SimpleStack();
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-        stack.push(4);
+        stack.push("1");
+        stack.push("2");
+        stack.push("3");
+        stack.push("4");
 
         stack.printAll();
 
@@ -69,12 +69,12 @@ public class SimpleStack {
     }
 
 
-    class Node {
+    public static class Node {
 
-        int value;
+        String value;
         Node next;
 
-        public Node(int value) {
+        public Node(String value) {
             this.value = value;
         }
     }
