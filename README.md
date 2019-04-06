@@ -16,4 +16,6 @@
 	* <code>palindrome()</code> 判断链表是否为回文链表
 ##### 栈
 * <code>SimpleStack</code> 基于单链表实现的栈，提供入栈和出栈
+* <code>SampleBrowser</code> 基于栈模拟浏览器的前进和后退
+	* <code>printInverse()</code> 递归逆序打印节点值
 
