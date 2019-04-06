@@ -1,6 +1,7 @@
 ## 手动实现常见的数据结构和算法
 
-### 数据结构
+> **数据结构为算法服务**
+
 ##### 数组
 * <code>SimpleArray</code> 数组的插入,删除,按照下标随机访问
 
@@ -13,4 +14,6 @@
 * <code>LinkedListApp</code> 单链表应用
 	* <code>getMiddle()\*</code>	获取单链表中间节点（*\*号表示有多种实现*）
 	* <code>palindrome()</code> 判断链表是否为回文链表
-### 算法
+##### 栈
+* <code>SimpleStack</code> 基于单链表实现的栈，提供入栈和出栈
+
