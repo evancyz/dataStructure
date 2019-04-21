@@ -62,6 +62,35 @@ public class SimpleSort {
 
     }
 
+    //冒泡排序
+    public static int[] bubbleSort(int[] data) {
+
+        boolean hasExchange = false;
+
+        for (int i = 0 ; i < data.length ; i++) {
+
+            //每一次至少把一个数排到最后面去,如果不发生交换,就说明排好了
+            for (int k = 0; k < data.length - i - 1; k++) {
+
+                if (data[k] > data[k + 1]) {
+
+                    int tmp = data[k];
+
+                    data[k] = data[k + 1];
+                    data[k + 1] = tmp;
+                    hasExchange = true;
+                }
+            }
+
+            if (!hasExchange) {
+                printAll(data);
+                return data;
+            }
+        }
+        printAll(data);
+        return data;
+    }
+
 
     public static void printAll(int[] data) {
         for (int i = 0; i < data.length; i++) {
@@ -90,6 +119,7 @@ public class SimpleSort {
 
         insertionSort(new int[] {6, 1, 4, 8, 2, 3, 9});
         selectionSort(new int[] {6, 1, 4, 8, 2, 3, 9});
+        bubbleSort(new int[] {6, 1, 4, 8, 2, 3, 9});
 
 
     }
