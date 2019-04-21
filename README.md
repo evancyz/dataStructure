@@ -25,3 +25,7 @@
   *  实现为循环数组,入队出队只改变指针位置,不进行数据搬移
 
 ### 算法
+* <code>SimpleSort</code>简单排序
+	* <code>insertionSort</code>插入排序
+	* <code>selectionSort</code>选择排序
+	* <code>bubbleSort</code>冒泡排序 	
